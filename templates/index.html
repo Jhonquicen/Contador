@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Contador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <h3>{{session['visit']}} times</h3>
+        <div class="botones">
+            <form method="post" action="/destroy_session">
+                <input type="submit" name="Click" value="Click" class="btn btn-outline-primary">
+                
+                <input type="submit" name="Reset" value="Reset" class="btn btn-outline-danger">
+
+                <input type="submit" name="2Click" value="2Click" class="btn btn-outline-success">
+            </form>
+
+    </div>
+    </div>
+</body>
+</html>

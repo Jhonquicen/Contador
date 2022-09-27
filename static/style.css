@@ -1,0 +1,34 @@
+.container{
+    
+    width: 40%;
+    
+    
+}
+h1{
+   background-color: rgb(159, 216, 194);
+   text-align: center;
+   
+}
+h3{
+    
+    text-align: center;
+    
+}
+.botones{
+    
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.boton_1{
+    background-color: rgb(48, 56, 156);
+    border: 1px solid gray;
+    color: grey;
+    
+}
+.boton_2{
+    background-color: rgb(151, 32, 32);
+    border: 1px solid gray;
+    color: grey;
+    
+}
